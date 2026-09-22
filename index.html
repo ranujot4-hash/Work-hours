@@ -124,10 +124,95 @@
 .month-nav{display:flex;align-items:center;justify-content:space-between;margin:4px 0 14px}.month-nav h2{margin:0;font-size:21px}
 .setting-group{margin-top:14px}.setting-group h3{font-size:13px;margin:0 0 8px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px}.setting-row{background:#fff;border:1px solid #eeeef1;border-radius:16px;padding:14px;display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:8px}.setting-row span{font-size:13px;font-weight:750}.setting-row small{display:block;color:var(--muted);font-size:11px;margin-top:3px}.danger-btn{color:#b33;background:#fff0f0;padding:11px 13px;border-radius:12px;font-weight:800}
 @media(max-width:520px){.summary-grid{grid-template-columns:1fr}.stats-grid{grid-template-columns:1fr 1fr}.bi-header{grid-template-columns:64px 1fr 1fr}.bi-day{grid-template-columns:64px 1fr 1fr}.summary-total-big b{font-size:24px}}
+
+/* V14.1 layout refinement — preserve the approved visual language while improving hierarchy */
+.navinner{grid-template-columns:repeat(4,1fr);max-width:520px}
+.nav button{font-size:11px;min-height:54px}
+.nav .ico{font-size:21px;margin-bottom:1px}
+.period-btn{height:42px;min-height:42px;padding:8px 12px;border-radius:12px;font-size:11px;letter-spacing:.15px}
+.bi-nav,.time-period-nav{gap:7px;margin:10px 0 12px}
+.bi-nav .period-btn,.time-period-nav .period-btn{width:100%}
+.dash-card{min-height:148px;padding:16px}
+.dash-title{font-size:12px;line-height:1.2}
+.dash-total{font-size:25px;line-height:1.05;margin-top:8px}
+.dash-pay{font-size:14px;margin-top:5px}
+.dash-small{font-size:11px;line-height:1.35;margin-top:9px}
+.dashboard-top{gap:10px}
+.sectionhead{margin:20px 2px 9px}
+.sectionhead h2{font-size:18px;line-height:1.2}
+.sub{line-height:1.4}
+.category-grid{gap:8px;margin-top:10px}
+.category-btn{min-height:48px;padding:10px 6px;font-size:11px;line-height:1.2}
+.bi-header{padding:11px 12px;min-height:58px}
+.bi-header .daycol{font-size:10px}
+.bi-header .weekcol{font-size:10px;line-height:1.2}
+.bi-header .weekcol b{font-size:11px;line-height:1.2;margin-top:3px}
+.bi-days{gap:8px;margin-top:8px}
+.bi-day{min-height:70px;padding:11px 12px;border-radius:17px}
+.bi-dayname{font-size:14px;line-height:1.1}
+.bi-hours{font-size:16px;line-height:1.1}
+.bi-date{font-size:10px;line-height:1.15;margin-top:4px}
+.bi-total{padding:14px 16px;margin-top:9px}
+.bi-total span{font-size:11px}
+.bi-total b{font-size:19px}
+.card,.formcard{padding:16px;border-radius:20px}
+.summary-top{padding:16px;margin-bottom:12px}
+.summary-total-big{gap:14px}
+.summary-total-big span{font-size:11px;line-height:1.2}
+.summary-total-big b{font-size:27px;line-height:1.05}
+.summary-pay b{font-size:21px}
+.breakdown-row{padding:9px 0;gap:10px}
+.breakdown-row span,.breakdown-row b{font-size:12px;line-height:1.25}
+.summary-grid{gap:9px}
+.summary-week{padding:14px;border-radius:17px}
+.summary-week h3{font-size:14px;line-height:1.2}
+.summary-lines{gap:0;margin-top:10px}
+.summary-line{padding:7px 0;line-height:1.25}
+.summary-line span,.summary-line b{font-size:11px}
+.month-nav h2{font-size:20px}
+.calendar{padding:12px;border-radius:20px}
+.calendar-summary{gap:7px}
+.calendar-summary .sumbox{padding:11px 9px;border-radius:14px}
+.calendar-summary .sumlabel{font-size:9.5px;line-height:1.2}
+.calendar-summary .sumvalue{font-size:15px;line-height:1.15;margin-top:5px}
+.time-day{padding:13px 14px;border-radius:17px}
+.time-row{grid-template-columns:72px minmax(0,1fr) auto;gap:9px;min-height:43px}
+.time-dayname{font-size:13px;line-height:1.1}
+.time-datenum{font-size:11px;line-height:1.2}
+.time-shift{font-size:12px;line-height:1.25}
+.time-total{font-size:15px;line-height:1.15}
+.time-extra{margin-top:8px;padding-top:8px}
+.time-foot{padding:13px 2px 0}
+.stats-grid{gap:9px}
+.stat-card{min-height:118px;padding:14px}
+.stat-icon{margin-bottom:10px}
+.stat-label{font-size:10.5px;line-height:1.3}
+.stat-value{font-size:23px;line-height:1.1}
+.setting-row{padding:13px}
+@media(max-width:520px){
+  .screen{padding:0 14px}
+  .dashboard-top{gap:8px}
+  .dash-card{min-height:144px;padding:14px 11px}
+  .dash-total{font-size:22px}
+  .dash-pay{font-size:13px}
+  .dash-small{font-size:10px}
+  .period-btn{font-size:10.5px;padding:8px 5px}
+  .bi-nav,.time-period-nav{gap:5px}
+  .bi-header{grid-template-columns:55px 1fr 1fr;padding:10px 8px}
+  .bi-day{grid-template-columns:55px 1fr 1fr;padding:11px 8px;min-height:69px}
+  .bi-dayname{font-size:13px}
+  .bi-hours{font-size:14.5px}
+  .bi-date{font-size:9.5px}
+  .summary-total-big b{font-size:24px}
+  .summary-pay b{font-size:19px}
+  .time-row{grid-template-columns:66px minmax(0,1fr) auto;gap:7px}
+  .time-shift{font-size:11px}
+  .time-total{font-size:13px}
+}
 </style>
 </head>
 <body><div id="app">
-<header class="top"><div><div class="title" style="color:var(--blue);font-size:28px;letter-spacing:-.8px">WORK HOURS</div></div><button class="iconbtn" onclick="openMore()" aria-label="More settings">⚙︎</button></header>
+<header class="top"><div><div class="title" style="color:var(--blue);font-size:28px;letter-spacing:-.8px">WORK HOURS</div></div><button class="iconbtn" onclick="show('settings')" aria-label="Settings">⚙︎</button></header>
 
 <section id="overview" class="screen active">
 <div class="dashboard-top">
@@ -135,7 +220,7 @@
   <button class="card dash-card dash-month-click" onclick="show('monthlySummary')"><div class="dash-title">This Month</div><div class="dash-total" id="monthTotal">0h 0m</div><div class="dash-pay" id="monthTotalPay">$0.00</div></button>
 </div>
 <div class="sectionhead"><div><h2>Biweekly Pay Period</h2><div class="sub" id="biPeriod" style="margin:3px 0 0"></div></div></div>
-<div class="bi-nav"><button class="period-btn" onclick="moveBiweek(-1)">‹&nbsp; Previous</button><button class="period-btn current" onclick="goCurrentBiweek()">Current</button><button class="period-btn" onclick="moveBiweek(1)">Next&nbsp; ›</button></div>
+<div class="bi-nav"><button class="period-btn" onclick="moveBiweek(-1)">‹&nbsp; PREVIOUS</button><button class="period-btn current" onclick="goCurrentBiweek()">CURRENT</button><button class="period-btn" onclick="moveBiweek(1)">NEXT&nbsp; ›</button></div>
 <div class="category-grid" id="dashCategories"><button class="category-btn active" onclick="setDashCategory('Full Time')">Full Time</button><button class="category-btn" onclick="setDashCategory('Extra Hours')">Extra Hours</button><button class="category-btn" onclick="setDashCategory('Part Time')">Part Time</button></div>
 <div class="bi-header"><div class="daycol">DAY</div><div class="weekcol">WEEK 1<b id="biWeek1Label"></b></div><div class="weekcol">WEEK 2<b id="biWeek2Label"></b></div></div>
 <div class="bi-days" id="biDays"></div>
@@ -144,19 +229,19 @@
 <div class="sectionhead"><h2>Recent shifts</h2><button class="link" onclick="show('timecard')">See all</button></div><div class="recent" id="recent"></div><button class="fab" onclick="newEntry()">+</button>
 </section>
 
-<section id="biweeklySummary" class="screen"><div class="back-row"><button class="back-btn" onclick="goBack()">‹ Back</button></div><div class="sectionhead" style="margin-top:0"><div><h2>BIWEEKLY SUMMARY</h2><div class="sub" id="biSummaryRange" style="margin:4px 0 0"></div><div class="sub" id="biSummaryPayday" style="margin:3px 0 0"></div></div></div><div class="card summary-top"><div class="summary-total-big"><div><span>BIWEEKLY TOTAL</span><b id="biSummaryHours">0h 0m</b></div><div class="summary-pay"><span>PAY</span><b id="biSummaryEarnings">$0.00</b></div></div><div class="breakdown" id="biSummaryBreakdown"></div></div><div class="time-period-nav"><button class="period-btn" onclick="moveBiweekSummary(-1)">‹&nbsp; Previous</button><button class="period-btn current" onclick="goCurrentBiweekSummary()">Current</button><button class="period-btn" onclick="moveBiweekSummary(1)">Next&nbsp; ›</button></div><div class="summary-grid" id="biSummaryWeeks"></div></section>
+<section id="biweeklySummary" class="screen"><div class="back-row"><button class="back-btn" onclick="goBack()">‹ Back</button></div><div class="sectionhead" style="margin-top:0"><div><h2>BIWEEKLY SUMMARY</h2><div class="sub" id="biSummaryRange" style="margin:4px 0 0"></div><div class="sub" id="biSummaryPayday" style="margin:3px 0 0"></div></div></div><div class="card summary-top"><div class="summary-total-big"><div><span>BIWEEKLY TOTAL</span><b id="biSummaryHours">0h 0m</b></div><div class="summary-pay"><span>PAY</span><b id="biSummaryEarnings">$0.00</b></div></div><div class="breakdown" id="biSummaryBreakdown"></div></div><div class="time-period-nav"><button class="period-btn" onclick="moveBiweekSummary(-1)">‹&nbsp; PREVIOUS</button><button class="period-btn current" onclick="goCurrentBiweekSummary()">CURRENT</button><button class="period-btn" onclick="moveBiweekSummary(1)">NEXT&nbsp; ›</button></div><div class="summary-grid" id="biSummaryWeeks"></div></section>
 
 <section id="calendar" class="screen"><div class="back-row"><button class="back-btn" onclick="goBack()">‹ Back</button></div><div class="monthbar"><h2 id="calTitle"></h2><button class="manage-btn" onclick="openMultiShift()">Multiple Shifts</button><div class="arrows"><button class="arrow" onclick="moveMonth(-1)">‹</button><button class="arrow" onclick="moveMonth(1)">›</button></div></div><div class="calendar"><div class="weekdays"><div class="weekday">M</div><div class="weekday">T</div><div class="weekday">W</div><div class="weekday">T</div><div class="weekday">F</div><div class="weekday">S</div><div class="weekday">S</div></div><div class="days" id="days"></div></div><div class="detail card" id="dayDetail"></div><div class="calendar-summary"><div class="sumbox"><div class="sumlabel">Worked Days</div><div class="sumvalue" id="calWorkedDays">0</div></div><div class="sumbox"><div class="sumlabel">Total Hours</div><div class="sumvalue" id="calTotalHours">0h 0m</div></div><div class="sumbox"><div class="sumlabel">Total Earnings</div><div class="sumvalue" id="calTotalPay">$0.00</div></div></div></section>
 
 <section id="add" class="screen"><div class="back-row"><button class="back-btn" onclick="goBack()">‹ Back</button></div><div class="sectionhead"><h2 id="formTitle">Add work hours</h2></div><div class="formcard"><div class="seg"><button id="catFull" class="active" onclick="setCategory('Full Time')">Full Time</button><button id="catExtra" onclick="setCategory('Extra Hours')">Extra Hours</button><button id="catPart" onclick="setCategory('Part Time')">Part Time</button></div><div id="fullPresets" class="preset-section"><div class="preset-title">SELECT FULL TIME SHIFT</div><div class="preset-grid"><button type="button" class="shift-preset" onclick="applyPreset('07:30','16:00',18.64)"><b>MORNING SHIFT</b><span>7:30 AM → 4 PM</span></button><button type="button" class="shift-preset" onclick="applyPreset('13:30','22:00',18.64)"><b>EVENING SHIFT</b><span>1:30 PM → 10 PM</span></button></div></div><div id="extraPresets" class="preset-section" style="display:none"><div class="preset-title">SELECT EXTRA HOURS</div><div class="preset-list"><button type="button" class="shift-preset" onclick="applyPreset('16:00','22:00',23)"><b>4 PM → 10 PM</b><span>6 hours</span></button><button type="button" class="shift-preset" onclick="applyPreset('08:00','16:00',23)"><b>8 AM → 4 PM</b><span>8 hours</span></button><button type="button" class="shift-preset" onclick="applyPreset('08:00','22:00',23)"><b>8 AM → 10 PM</b><span>14 hours</span></button></div></div><div id="partSchedule" class="part-schedule" style="display:none"><div class="preset-title">AUTOMATIC PART TIME</div><div class="auto-card"><div><b>FRIDAY NIGHT</b><span>11:00 PM → 7:00 AM · 8 hours · No break</span></div><div><b>SATURDAY NIGHT</b><span>11:00 PM → 7:00 AM · 8 hours · No break</span></div><small>Automatically punched in through December 21, 2026.</small></div></div><div class="field"><label>Date</label><input id="date" type="date"></div><div class="grid2"><div class="field"><label>Start Time</label><input id="start" type="time"></div><div class="field"><label>End Time</label><input id="end" type="time"></div></div><div class="field"><label>Hourly rate (CAD)</label><input id="rate" type="number" min="0" step="0.001" inputmode="decimal" placeholder="Enter rate"></div><div class="field"><div class="breaktitle"><label>Break</label><span class="statlabel" id="breakSummary">No break</span></div><div class="breakopts"><button id="breakNone" class="active" onclick="setBreakMode('none')">No break</button><button id="break30" onclick="setBreakMode('30')">+30 min</button><button id="breakCustom" onclick="setBreakMode('custom')">Add break</button></div><div id="customBreak" class="custombreak"><input id="breakMinutes" type="number" min="1" step="1" inputmode="numeric" placeholder="Break minutes"><div class="breakhint">Break time is deducted from paid hours.</div></div></div><div class="field"><label>Notes (optional)</label><textarea id="notes" rows="3" placeholder="Anything you want to remember"></textarea></div><div class="calc"><div class="calcrow"><span>Shift length</span><b id="grossHours">0h 0m</b></div><div class="calcrow"><span>Break</span><b id="calcBreak">0m</b></div><div class="calcrow"><span>Paid hours</span><b id="calcHours">0h 0m</b></div><div class="calcrow"><span>Estimated earnings</span><b id="calcPay">$0.00</b></div></div><button class="primary" id="saveBtn" onclick="saveEntry()">Save work hours</button><button class="secondary" id="cancelBtn" onclick="cancelEdit()" style="display:none;width:100%;margin-top:8px">Cancel</button></div></section>
 
-<section id="timecard" class="screen"><div class="back-row"><button class="back-btn" onclick="goBack()">‹ Back</button></div><div class="sectionhead"><h2>Time Card</h2><button id="manageBtn" class="manage-btn" onclick="toggleManage()">Manage</button></div><div class="category-grid" id="timeCategories"><button class="category-btn active" onclick="setTimeCategory('Full Time')">Full Time</button><button class="category-btn" onclick="setTimeCategory('Extra Hours')">Extra Hours</button><button class="category-btn" onclick="setTimeCategory('Part Time')">Part Time</button></div><div class="time-period-nav"><button class="period-btn" onclick="moveWeek(-1)">‹&nbsp; Previous</button><button class="period-btn current" onclick="goCurrentWeek()">Current</button><button class="period-btn" onclick="moveWeek(1)">Next&nbsp; ›</button></div><div class="time-range" id="timeWeekRange"></div><div class="timecard-days" id="timecardDays"></div><div class="card time-foot"><span>WEEKLY TOTAL</span><b id="timeWeekTotal">0h 0m</b></div></section>
+<section id="timecard" class="screen"><div class="back-row"><button class="back-btn" onclick="goBack()">‹ Back</button></div><div class="sectionhead"><h2>Time Card</h2><button id="manageBtn" class="manage-btn" onclick="toggleManage()">Manage</button></div><div class="category-grid" id="timeCategories"><button class="category-btn active" onclick="setTimeCategory('Full Time')">Full Time</button><button class="category-btn" onclick="setTimeCategory('Extra Hours')">Extra Hours</button><button class="category-btn" onclick="setTimeCategory('Part Time')">Part Time</button></div><div class="time-period-nav"><button class="period-btn" onclick="moveWeek(-1)">‹&nbsp; PREVIOUS</button><button class="period-btn current" onclick="goCurrentWeek()">CURRENT</button><button class="period-btn" onclick="moveWeek(1)">NEXT&nbsp; ›</button></div><div class="time-range" id="timeWeekRange"></div><div class="timecard-days" id="timecardDays"></div><div class="card time-foot"><span>WEEKLY TOTAL</span><b id="timeWeekTotal">0h 0m</b></div></section>
 
 <section id="monthlySummary" class="screen"><div class="back-row"><button class="back-btn" onclick="goBack()">‹ Back</button></div><div class="month-nav"><h2 id="monthSummaryTitle">MONTHLY SUMMARY</h2><div class="arrows"><button class="arrow" onclick="moveSummaryMonth(-1)">‹</button><button class="arrow" onclick="moveSummaryMonth(1)">›</button></div></div><div class="card summary-top"><div class="summary-total-big"><div><span>MONTH TOTAL</span><b id="monthSummaryHours">0h 0m</b></div><div class="summary-pay"><span>PAY</span><b id="monthSummaryPay">$0.00</b></div></div><div class="breakdown" id="monthSummaryBreakdown"></div></div><div class="sectionhead"><h2>WEEKS</h2></div><div class="summary-grid" id="monthSummaryWeeks"></div></section>
 <section id="stats" class="screen"><div class="back-row"><button class="back-btn" onclick="goBack()">‹ Back</button></div><div class="sectionhead" style="margin-top:0"><h2>STATISTICS</h2></div><div class="stats-grid" id="statsGrid"></div></section>
 <section id="settings" class="screen"><div class="back-row"><button class="back-btn" onclick="goBack()">‹ Back</button></div><div class="sectionhead" style="margin-top:0"><h2>SETTINGS</h2></div><div class="setting-group"><h3>Hourly Rates</h3><div class="setting-row"><div><span>Full Time</span><small>New entries</small></div><b>$18.64/hr</b></div><div class="setting-row"><div><span>Extra Hours</span><small>New entries</small></div><b>$23.00/hr</b></div><div class="setting-row"><div><span>Part Time</span><small>New entries</small></div><b>$15.625/hr</b></div></div><div class="setting-group"><h3>Breaks</h3><div class="setting-row"><div><span>Available options</span><small>No break, 30 minutes, custom minutes</small></div></div></div><div class="setting-group"><h3>General</h3><div class="setting-row"><div><span>Week starts</span><small>Sunday</small></div><b>Sunday</b></div><div class="setting-row"><div><span>Currency</span><small>Canadian dollars</small></div><b>CAD</b></div><div class="setting-row"><div><span>Time format</span><small>12-hour</small></div><b>12h</b></div></div><div class="setting-group"><h3>Data Management</h3><div class="setting-row"><div><span>Backup</span><small>Export or restore your work records</small></div><button class="secondary" onclick="exportData()">Export</button></div><div class="setting-row"><div><span>Restore</span><small>Import a previous backup</small></div><button class="secondary" onclick="document.getElementById('importFile').click()">Import</button></div><button class="danger-btn" onclick="clearAll()">Delete all work records</button></div></section>
-<nav class="nav" aria-label="Main navigation"><div class="navinner"><button data-screen="overview" class="active" onclick="show('overview')"><span class="ico">⌂</span>Dashboard</button><button data-screen="calendar" onclick="show('calendar')"><span class="ico">▦</span>Calendar</button><button data-screen="timecard" onclick="show('timecard')"><span class="ico">☰</span>Time Card</button><button data-screen="stats" onclick="show('stats')"><span class="ico">▥</span>Stats</button><button onclick="openMore()"><span class="ico">•••</span>More</button></div></nav>
-<div class="modalback" id="multi"><div class="sheet"><h3>Multiple Shift Entry</h3><div class="field"><label>Shift preset</label><select id="multiPreset"><option value="ftm">Full Time Morning · 7:30 AM → 4 PM · $18.64</option><option value="fte">Full Time Evening · 1:30 PM → 10 PM · $18.64</option><option value="ex6">Extra Hours · 4 PM → 10 PM · $23</option><option value="ex8">Extra Hours · 8 AM → 4 PM · $23</option><option value="ex14">Extra Hours · 8 AM → 10 PM · $23</option><option value="ptf">Part Time Friday Night · 11 PM → 7 AM · $15.625</option><option value="pts">Part Time Saturday Night · 11 PM → 7 AM · $15.625</option></select></div><div class="grid2"><div class="field"><label>From date</label><input id="multiFrom" type="date"></div><div class="field"><label>To date</label><input id="multiTo" type="date"></div></div><div class="field"><label>Days of week</label><div class="multi-days" id="multiDays"><label><input type="checkbox" value="0" checked> Sun</label><label><input type="checkbox" value="1" checked> Mon</label><label><input type="checkbox" value="2" checked> Tue</label><label><input type="checkbox" value="3" checked> Wed</label><label><input type="checkbox" value="4" checked> Thu</label><label><input type="checkbox" value="5" checked> Fri</label><label><input type="checkbox" value="6" checked> Sat</label></div></div><div class="card" id="multiPreview">Select a range to preview shifts.</div><button class="primary" onclick="addMultipleShifts()">Add All Shifts</button><button class="secondary" onclick="closeMultiShift()" style="width:100%;margin-top:8px">Cancel</button></div></div><div class="modalback" id="more"><div class="sheet"><h3>More</h3><button onclick="showStats()">Statistics</button><button onclick="showSettings()">Settings</button><button onclick="exportData()">Export backup</button><button onclick="document.getElementById('importFile').click()">Import backup</button><input id="importFile" type="file" accept="application/json" hidden onchange="importData(event)"><button onclick="closeMore()">Close</button><button class="danger" onclick="clearAll()">Delete all work records</button></div></div><div class="toast" id="toast"></div>
+<nav class="nav" aria-label="Main navigation"><div class="navinner"><button data-screen="overview" class="active" onclick="show('overview')"><span class="ico">⌂</span>Dashboard</button><button data-screen="calendar" onclick="show('calendar')"><span class="ico">▦</span>Calendar</button><button data-screen="timecard" onclick="show('timecard')"><span class="ico">☰</span>Time Card</button><button data-screen="stats" onclick="show('stats')"><span class="ico">▥</span>Stats</button></div></nav>
+<div class="modalback" id="multi"><div class="sheet"><h3>Multiple Shift Entry</h3><div class="field"><label>Shift preset</label><select id="multiPreset"><option value="ftm">Full Time Morning · 7:30 AM → 4 PM · $18.64</option><option value="fte">Full Time Evening · 1:30 PM → 10 PM · $18.64</option><option value="ex6">Extra Hours · 4 PM → 10 PM · $23</option><option value="ex8">Extra Hours · 8 AM → 4 PM · $23</option><option value="ex14">Extra Hours · 8 AM → 10 PM · $23</option><option value="ptf">Part Time Friday Night · 11 PM → 7 AM · $15.625</option><option value="pts">Part Time Saturday Night · 11 PM → 7 AM · $15.625</option></select></div><div class="grid2"><div class="field"><label>From date</label><input id="multiFrom" type="date"></div><div class="field"><label>To date</label><input id="multiTo" type="date"></div></div><div class="field"><label>Days of week</label><div class="multi-days" id="multiDays"><label><input type="checkbox" value="0" checked> Sun</label><label><input type="checkbox" value="1" checked> Mon</label><label><input type="checkbox" value="2" checked> Tue</label><label><input type="checkbox" value="3" checked> Wed</label><label><input type="checkbox" value="4" checked> Thu</label><label><input type="checkbox" value="5" checked> Fri</label><label><input type="checkbox" value="6" checked> Sat</label></div></div><div class="card" id="multiPreview">Select a range to preview shifts.</div><button class="primary" onclick="addMultipleShifts()">Add All Shifts</button><button class="secondary" onclick="closeMultiShift()" style="width:100%;margin-top:8px">Cancel</button></div></div><div class="toast" id="toast"></div>
 </div>
 <script>
 const KEY='workHours.v3';
